@@ -12,7 +12,7 @@ fetch('https://newsapi.org/v2/everything?q=apple&from=2022-02-21&to=2022-02-21&s
 
 // Menampilkan news based on input keyword
 const formControl = document.querySelector('.form-control');
-formControl.addEventListener('change', async function () {
+formControl.addEventListener('input', async function () {
   try {
     const inputKeyword = document.querySelector('.input-keyword');
     if (inputKeyword.value == '') {
